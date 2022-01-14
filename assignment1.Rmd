@@ -1,0 +1,50 @@
+---
+title: "Assignment 1"
+subtitle: "SOSC 13200-2, WIN22"
+author: "Your name goes here"
+date: "Due on 1/17 @ 11:59pm"
+output: pdf_document
+---
+
+```{r setup, echo=TRUE}
+knitr::opts_chunk$set(echo=TRUE)
+
+# load packages
+
+# load njmin data
+
+```
+
+# Overview
+You will be working with data used by Nobel-prize winners David Card & Alan Krueger in their famous article on "Minimum wages and unemployment" (1994). You may recall the article from fall quarter. We will re-examine it in Week 2. 
+
+Download the "card-krueger_1994" folder and its contents from the "Files/Datasets" section of Canvas. Save the folder to an appropriate location on your computer. (Remember our earlier discussion about directory hygiene.) 
+
+The folder contains a folder entitled "njmmin", which contains several files. The relevant files for Assignment 1 are "public.dat" (the dataset) and "codebook.txt" (the codebook).
+
+# 1 (25 pts)
+**1.1 In the setup chunk above, load the "public.dat" dataset in to the Environment using the appropriate function for this type of data**. 
+
+**1.2 Write a new code chunk below these lines. In the chunk, use one or two R functions to inspect the data and answer these questions: (a) How many observations (rows) do the data contain? (b) How many columns do they contain? (c) What are the names of the first few variables? (d) Do you think that these variable names are useful? (e) Why or why not?**
+
+# 2 (25 pts)
+**2.1 Examine the codebook for dataset("codebook.txt"). Examine the variable descriptions. Then, create a new code chunk below. In the chunk, rename the variables in the dataset, using the descriptive names given in the codebook.**
+
+**NOTE: Upon googling, you will find that there are various functions for renaming variables in R. Some are more efficient than others. You may use whichever you prefer.**
+
+# 3 (25 pts)
+**3.1 View the dataset using the `View()` function or by clicking on the dataset in the Environment tab. What character seems to denote missing data?** 
+
+**3.2 Click on the small blue circle with white arrow in the Environment tab. Note that some numeric variables were imported as character variables upon loading the dataset. Return to where you loaded the dataset in the setup chunk. Add some options to your loading function to (i) import missing data as `NA` and (ii) import variables as their proper type.**
+
+# 4 (25 pts)
+4.1 Here is Card & Krueger's (1994) description of their Full-time-equivalent (fte) employment variable (p. 775):
+
+"Full-time-equivalent (FTE) employment was calculated as the number of full-time workers [including managers] plus 0.5 times the number of part-time works."
+
+**Create a new code chunk below. In the chunk, replicate the authors' FTE variable. Create the variable as new variable *inside* the dataset.**
+
+**4.2 Check you work by printing the first few values of your new variable in the code chunk below.**
+```{r print_fte_var, echo=TRUE}
+
+```
