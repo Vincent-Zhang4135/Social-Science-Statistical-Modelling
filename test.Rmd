@@ -1,0 +1,68 @@
+---
+title: "test"
+author: "Vincent Zhang"
+date: "2/10/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(ggplot2)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+set.seed(60637)
+(mean_X <- (0 * (1/16)) + (1 * (3/8)) + (2 * (9/16)))
+(var_X <- (2.25 * (1/16)) + (0.25 * (3/8)) + (0.25 * 9/16))
+
+(sd_X <- var_X^0.5)
+
+n <- 100
+X <- c(0, 1, 2)
+probs <- c(1/16, 3/8, 9/16)
+x_obs <- sample(X, prob = probs, size = n, replace = TRUE)
+head(x_obs)
+mean(x_obs)
+var(x_obs)
+sd(x_obs)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+set.seed(60637)
+n_iter <- 10000
+x_mat <- replicate(n_iter, sample(X, prob = probs, size = n, replace=TRUE))
+dim(x_mat)
+x_mat[,1]
+
+sample_mn <- apply(x_mat, 2, mean)
+length(sample_mn)
+head(sample_mn)
+```
+```{r}
+set.seed(60637)
+sample_mn <- data.frame(sample_mn = sample_mn)
+ggplot(sample_mn, aes(sample_mn)) +
+         geom_histogram(bins=20, position="identity", color="white") +
+         geom_vline(xintercept=mean_X, color='gray', lty='dashed') +
+         theme_bw()
+
+(sample_vn <- apply(x_mat, 2, var))
+sample_vn <- data.frame(sample_vn = sample_vn)
+ggplot(sample_vn, aes(sample_vn)) +
+         geom_histogram(bins=20, position="identity", color="white") +
+         geom_vline(xintercept=var_X, color='gray', lty='dashed') +
+         theme_bw()
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

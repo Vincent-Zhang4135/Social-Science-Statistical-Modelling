@@ -1,18 +1,19 @@
 ---
 title: "Assignment 1"
 subtitle: "SOSC 13200-2, WIN22"
-author: "Your name goes here"
+author: "Vincent"
 date: "Due on 1/17 @ 11:59pm"
 output: pdf_document
 ---
 
-```{r setup, echo=TRUE}
+```{r setup, echo=TRUE, }
 knitr::opts_chunk$set(echo=TRUE)
 
 # load packages
-
+library(tidyverse)
 # load njmin data
-
+public <- read.table("Datasets/card-krueger_1994/njmin/public.dat", 
+                     na.strings=c(".","NA"))
 ```
 
 # Overview
@@ -27,13 +28,48 @@ The folder contains a folder entitled "njmmin", which contains several files. Th
 
 **1.2 Write a new code chunk below these lines. In the chunk, use one or two R functions to inspect the data and answer these questions: (a) How many observations (rows) do the data contain? (b) How many columns do they contain? (c) What are the names of the first few variables? (d) Do you think that these variable names are useful? (e) Why or why not?**
 
+```{r}
+dimensions <- dim(public)
+dimensions # this will print out the rows by columns
+names <- names(public)
+names # this will print out all the varialbe names
+```
+
+## 1.2 answers:
+
+a. there are 410 rows
+b. there are 46 columns
+c. the name of the first few variables are V1, V2, V3, V4, V5, and V6
+d. These variables are not useful
+e. because they are not meaningful and do not tell us anything about what the numbers corresponding to each variable would actually mean
+
 # 2 (25 pts)
 **2.1 Examine the codebook for dataset("codebook.txt"). Examine the variable descriptions. Then, create a new code chunk below. In the chunk, rename the variables in the dataset, using the descriptive names given in the codebook.**
 
+```{r}
+# use the colnames() to rename all the variable names at once:
+colnames(public) <- c('SHEET', 'CHAIN', 'CO_OWNED', 'STATE', 'SOUTHJ', 'CENTRALJ', 
+                      'NORTHJ', 'PA1', 'PA2', 'SHORE', 'NCALLS', 'EMPFT', 
+                      'EMPPT', 'NMGRS', 'WAGE_ST', 'INCTIME', 'FIRSTINC', 
+                      'BONUS', 'PCTAFF', 'MEALS', 'OPEN', 'HRSOPEN', 'PSODA', 
+                      'PFRY', 'PENTREE', 'NREGS', 'NREGS11', 'TYPE2', 'STATUS2',
+                      'DATE2', 'NCALLS2', 'EMPFT2', 'EMPPT2', 'NMGR2', 'WAGE_ST2',
+                      'INCTIME2', 'FIRSTIN2', 'SPECIAL2', 'MEALS2', 'OPEN2R', 
+                      'HRSOPEN2', 'PSODA2', 'PFRY2', 'PENTREE2', 'NREGS2', 'NREGS112') 
+```
+
 **NOTE: Upon googling, you will find that there are various functions for renaming variables in R. Some are more efficient than others. You may use whichever you prefer.**
+
+I realized there is a way to read from text file and extract all the names, but because there are only 46 variables, its probably less energy to just type them all up, but I might revisit some time to recode it! :D
 
 # 3 (25 pts)
 **3.1 View the dataset using the `View()` function or by clicking on the dataset in the Environment tab. What character seems to denote missing data?** 
+
+```{r echo=TRUE}
+View(public)
+```
+
+looking at the data, I notice that period (".") represents missing data
 
 **3.2 Click on the small blue circle with white arrow in the Environment tab. Note that some numeric variables were imported as character variables upon loading the dataset. Return to where you loaded the dataset in the setup chunk. Add some options to your loading function to (i) import missing data as `NA` and (ii) import variables as their proper type.**
 
@@ -44,7 +80,19 @@ The folder contains a folder entitled "njmmin", which contains several files. Th
 
 **Create a new code chunk below. In the chunk, replicate the authors' FTE variable. Create the variable as new variable *inside* the dataset.**
 
+```{r}
+# 12 and 13 and the column numbers of EMPFT and EMPPT respectively
+public$FTE <- (public[,12] + (0.5*public[,13]))
+```
+
+
 **4.2 Check you work by printing the first few values of your new variable in the code chunk below.**
 ```{r print_fte_var, echo=TRUE}
 
+# These are the FTE variables
+head(public[,47], 10)
+
+# Let us compare them to the EMPFT and EMPPT to see if the math works out
+head(public[,12], 10)
+head(public[,13], 10)
 ```
