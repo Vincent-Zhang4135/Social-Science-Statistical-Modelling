@@ -1,0 +1,599 @@
+
+\section{Tables}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l*7c}
+\toprule
+  & FACS & LCM & Manual & PAN & PAN.FACS & TRAP & Studies\\
+\midrule
+Astrocyte & ✔ &  &  &  & ✔ &  & 2\\
+Basket &  &  & ✔ &  &  & ✔ & 2\\
+Bergmann &  &  &  &  &  & ✔ & 1\\
+CerebGranule &  &  &  &  &  & ✔ & 1\\
+Cholinergic &  &  &  &  &  & ✔ & 2\\
+DentateGranule &  & ✔ &  &  &  &  & 1\\
+Dopaminergic &  & ✔ &  &  &  &  & 2\\
+Ependymal & ✔ &  &  &  &  &  & 1\\
+FS Basket (G42) &  &  & ✔ &  &  &  & 3\\
+GabaReln &  &  & ✔ &  &  &  & 1\\
+GabaSSTReln &  &  & ✔ &  &  &  & 1\\
+Gluta &  &  & ✔ &  &  &  & 1\\
+Golgi &  &  &  &  &  & ✔ & 1\\
+Hypocretinergic &  &  &  &  &  & ✔ & 1\\
+Martinotti (GIN) &  &  & ✔ &  &  &  & 1\\
+Microglia & ✔ &  &  &  &  &  & 1\\
+MotorCholin &  &  &  &  &  & ✔ & 1\\
+Oligodendrocyte &  &  &  & ✔ &  & ✔ & 1\\
+Purkinje &  & ✔ & ✔ &  &  & ✔ & 4\\
+PyramidalCorticoThalam &  &  & ✔ &  &  &  & 6\\
+Pyramidal\_Glt\_25d2 &  &  &  &  &  & ✔ & 1\\
+Pyramidal\_S100a10 &  &  &  &  &  & ✔ & 1\\
+Pyramidal\_Thy1 &  &  & ✔ &  &  &  & 1\\
+Serotonergic &  &  &  &  &  & ✔ & 1\\
+Spiny &  &  &  &  &  & ✔ & 1\\
+Th\_positive\_LC &  &  & ✔ &  &  &  & 4\\
+VIPReln (G30) &  &  & ✔ &  &  &  & 2\\
+\bottomrule
+\end{tabular}
+\caption{A summarization of the datasets collected. Check marks show the methods used to isolate cell types. Number of studies that contain the cell type are given on the right.}
+\label{table:dataTable}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Cell type & PMID\\
+\midrule
+Doyle et al., 2008 & 19013282\\
+Cahoy et al., 2008 & 18171944\\
+Sugino et al., 2006 & 16369481\\
+Okaty et al., 2009 & 19474331\\
+Anandasabapathy et al., 2011 & 21788405\\
+Rossner et al., 2006 & 17005859\\
+Chung et al., 2005 & 15888489\\
+Unpublished & NA\\
+Beckervordersandforth et al 2010 & 21112568\\
+Perrone-Bizzozero NI et al. 2011 & 22004431\\
+Maze et al 2014 & 24584053\\
+Heiman et al 2014 & 24599591\\
+Tan et al 2013 & 24311694\\
+Schmidt et al 2012 & 22632977\\
+Dalal et al 2013 & 23431030\\
+Fomchenko et al 2011 & 21754979\\
+Bellesi et al 2013 & 24005282\\
+Paul et al 2012 & 22754500\\
+Galloway et al 2014 & 24986919\\
+Dougherty et al 2013 & 23407934\\
+Zamanian et al 2012 & 22553043\\
+G??rlich et al 2013 & 24082085\\
+Sugino et al. 2014 & 25232122\\
+Phani et al. 2015 & 20462502\\
+\bottomrule
+\end{tabular}
+\caption{Sources used in generation of the mouse brain cell type database.}
+\label{table:cellTypeCite}
+\end{center}
+\end{table}
+
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Cell Types & p-value\\
+\midrule
+Astrocyte & p<0.001\\
+Microglia & p<0.001\\
+Oligo & p<0.001\\
+GabaPV & 0.001\\
+GabaRelnCalb & 0.015\\
+GabaVIPReln & p<0.001\\
+PyramidalCorticoThalam & p<0.001\\
+Pyramidal\_Glt\_25d2 & 0.039\\
+Pyramidal\_S100a10 & p<0.001\\
+Pyramidal\_Thy1 & 0.024\\
+\bottomrule
+\end{tabular}
+\caption{Enriched co-existence of marker genes in cortical single cell samples from mouse brains. Correlation of marker genes in a binary matrix of gene expression is compared to the correlation of randomly selected genes with matching prevalence across the dataset}
+\label{table:singleCellRNAMouse}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Cell Types & p-value\\
+\midrule
+Astrocyte & p<0.001\\
+Microglia & p<0.001\\
+Oligo & p<0.001\\
+GabaPV & p<0.001\\
+GabaRelnCalb & p<0.001\\
+GabaVIPReln & p<0.001\\
+PyramidalCorticoThalam & 0.494\\
+Pyramidal\_Glt\_25d2 & 0.382\\
+Pyramidal\_S100a10 & 0.003\\
+Pyramidal\_Thy1 & 0.494\\
+\bottomrule
+\end{tabular}
+\caption{Enriched co-existence of marker genes in cortical single cell samples from human brains. Correlation of marker genes in a binary matrix of gene expression is compared to the correlation of randomly selected genes with matching prevalence across the dataset}
+\label{table:singleCellRNAHuman}
+\end{center}
+\end{table}
+
+
+\begin{table}[H]
+\begin{center}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lcccccc}
+\toprule
+Cell Types & UCL Dataset & Sibille Dataset & Stanley - AltarA & Stanley - Bahn & Stanley - Dobrin & Stanley - Kato\\
+\midrule
+GabaPV & 0.205 & p<0.001 & 0.116 & p<0.001 & p<0.001 & p<0.001\\
+GabaVIPReln & p<0.001 & p<0.001 & 0.268 & 0.021 & p<0.001 & 0.023\\
+PyramidalCorticoThalam & 0.724 & 0.875 & 0.8 & 0.875 & 0.809 & 0.635\\
+Pyramidal\_S100a10 & p<0.001 & p<0.001 & p<0.001 & p<0.001 & p<0.001 & p<0.001\\
+Pyramidal\_Thy1 & 0.038 & 0.04 & genes<3 & genes<3 & 0.679 & genes<3\\
+\bottomrule
+\end{tabular}}
+\caption{Enriched coexpression in cortical cell types. For each marker gene set, random gene sets are created and their co-expression levels are compared to the co-expression levels of the genes in the marker gene set. Above are the p values from a wilcox test that compares the co-expression levels between the gene sets. P values are calculated only for gene sets with more than 2 genes. For Stanley institute datasets, names provided by the institute are used to describe the datasets}
+\label{table:corticalTable}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Cell Type & p-value\\
+\midrule
+Basket & 0.11\\
+Bergmann & p<0.001\\
+CerebGranule & 0.268\\
+Golgi & 0.679\\
+Purkinje & p<0.001\\
+\bottomrule
+\end{tabular}
+\caption{Enriched coexpression in cerebellar cell types. For each marker gene set, random gene sets are created and their co-expression levels are compared to the co-expression levels of the genes in the marker gene set. Above are the p values from a wilcox test that compares the co-expression levels between the gene sets. P values are calculated only for gene sets with more than 2 genes.}
+\label{table:cerebellarTable}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Cell Type & p-value\\
+\midrule
+DentateGranule & p<0.001\\
+GabaSSTReln & p<0.001\\
+Pyramidal\_Thy1 & p<0.001\\
+\bottomrule
+\end{tabular}
+\caption{Enriched coexpression in hippocampal cell types.}
+\label{table:hippocampalTable}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+Cell Type & p-value\\
+\midrule
+BrainstemCholin & 0.008\\
+Dopaminergic & p<0.001\\
+Serotonergic & 0.001\\
+\bottomrule
+\end{tabular}
+\caption{Enriched coexpression in cell types of the substantia nigra.}
+\label{table:substantialTable}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Cell Type & p-value\\
+\midrule
+GabaReln & p<0.001\\
+Hypocretinergic & 0.015\\
+ThalamusCholin & 0.001\\
+\bottomrule
+\end{tabular}
+\caption{Enriched coexpression in thalamic cell types.}
+\label{table:thalamicTable}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Cell Type & p-value\\
+\midrule
+Astrocyte & p<0.001\\
+Microglia & p<0.001\\
+Oligo & p<0.001\\
+\bottomrule
+\end{tabular}
+\caption{Enriched coexpression in cell types found in all brain regions.}
+\label{table:allTable}
+\end{center}
+\end{table}
+
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+  & Estimate & Std..Error\\
+\midrule
+Intercept & 0.6527065 & 0.1775530\\
+Disease State:PD & -0.3784387 & 0.1957226\\
+Region:Medial & -0.3040865 & 0.1019972\\
+Sex:Male & 0.0510080 & 0.1926069\\
+Disease State:PD, Region:Medial & 0.4180618 & 0.1138480\\
+Disease State:PD, Sex:Male & -0.0374649 & 0.2213898\\
+Region:Medial, Sex: Male & 0.3578188 & 0.1116042\\
+Disease State:PD, Region:Medial, Sex:Male & -0.4197041 & 0.1323141\\
+\bottomrule
+\end{tabular}
+\caption{Coefficients found by the linear mixed-effect model. The estimate indicates the estimated effect size by the model. Disease State:PD is the estimated effect of having the Parkinson's disease, Region:Medial is the estimated effect of the sample being from medial substantia nigra and Sex:Male is the estimated effect of the sample being from a male patient. The later rows describe the interaction effect that describes the estimated effect of a sample satifying multiple conditions (being a male parkinson's disease sample for instance).}
+\label{table:parkinsonMixed}
+\end{center}
+\end{table}
+
+
+
+\begin{table}[H]
+\renewcommand\arraystretch{0.7}
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Reference & PMID\\
+\midrule
+Toker et al. 2013 & 23420886\\
+Maruyama et al. 2012 & 23200825\\
+Yao et al. 2014 & 24394418\\
+Haldar et al. & Unpublished\\
+Menssen et al. 2009 & 19265543\\
+Lotem et al. 2013 & 24236182\\
+Tanaka et al. 2014 & 25236782\\
+Li et al. 2015 & 25526089\\
+Yao et al 2015 & 25527787\\
+Lindvall et al. 2006 & 16764821\\
+Moriyama et al. 2014 & 24913235\\
+Berrien-Elliot et al. 2015 & 25516478\\
+Tartey et al. 2014 & 25107474\\
+McKinstry et al. 2014 & 25369785\\
+Kramer et al. 2013 & 25931581\\
+Kramer et al. 2014 & 25931582\\
+Kramer et al. 2015 & 25931583\\
+Vahl et al. 2014 & 25464853\\
+Wang el al. & Unpublished\\
+Holmes et al. 2015 & 25398911\\
+Nakano et al. 2015 & 25769922\\
+Ortutay et al. 2015 & 25926688\\
+Yang et el al. 2015 & 26390156\\
+Fehniger et al. 2007 & 17540585\\
+Tomayko et al. 2008 & 18566367\\
+Zietara et al. 2013 & 23345431\\
+Cao et al. & Unpublished\\
+Somervaille et al. 2009 & 19200802\\
+Ingersoll et al. 2010 & 19965649\\
+Guo et al. 2010 & 20703300\\
+Laird et al. 2010 & 20974990\\
+Konuma et al. 2011 & 21540074\\
+Kuczma et al. 2011 & 21642545\\
+Kaji et al. 2012 & 23027924\\
+Jung et al. 2013 & 23248261\\
+Shen et al. 2014 & 24572363\\
+Petersen et al. 2012 & 22543263\\
+Luckey et al. 2006 & 16492737\\
+Baranek et al. 2012 & 23084923\\
+\bottomrule
+\end{tabular}
+\caption{Sources used in generation of the mouse blood cell type database.}
+\label{table:bloodCite}
+\end{center}
+\end{table}
+
+
+
+
+\section{Figures}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 6.5in]{figures/pipeline.png}
+  \caption{Workflow of the project} % what will appear in index
+  \label{fig:workflow}
+\end{center}
+\end{figure}
+
+% \begin{figure}[here]
+% \begin{center}
+%   \includegraphics[height = 8in]{figures/microarrayRnaSeq.png}
+%   \caption{A short summary of microarray (right) and RNA sequencing (left) methods.}
+%   \label{fig:microarrayRnaSeq}
+% \end{center}
+% \end{figure}
+% 
+
+
+% \begin{figure}[here]
+% \begin{center}
+%   \includegraphics[height = 3in]{figures/RNAseq noise.png}
+%   \caption{Taken from RNA sequencing shows low repeatability at low levels (Åabaj et al. 2011): Ranks of expression values for two indepent replicates are shown. Left figure left figure shows unmodified ranks. Right figure adds jitter to the points to reveal overplotting on the edges. The sample is taken from liver tissue}
+%   \label{fig:labaj}
+% \end{center}
+% \end{figure}
+
+
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 7in]{figures/isolationMethods.png}
+  \caption{Example representations of cell type isolation techniques. A. Adapted from Kang et al. 2011. An example application of FACS. A fluorescently active molecule is used to label specific cell in the population. Upon detection of fluorescence, a charge is placed on the droplet whose path is later manipulated by an electrical field to separate the cells. B. Adapted from Cahoy et al. 2008. An example application of TRAP. A cell suspension is placed into a plate with bounded antibodies binding to a specific cell type. Removing suspended cells removes the cell type from the population. C. Adapted from Sanz et al. 2009. A schematic representation of the TRAP method. A cell type specific promoter driven expression of a labelled ribosome component causes certain cells to contain labelled ribosomes. The tissue is homogenized as a whole and fixed. Labelled ribosomes that carry RNAs from specific cells are isolated. Removal of ribosomes leaves cell type specific RNA samples behind. D. Adapted from Liotta et al. 2000. A schematic representation of LCM method. Cells are visually identified on the slide and marked. A laser then cuts the marked part and separates it from the rest of the samples.}
+  \label{fig:isolationMethods}
+\end{center}
+\end{figure}
+
+% \begin{figure}[here]
+% \begin{center}
+%   \includegraphics[height = 4in]{figures/pre-quantile.png}
+%   \caption{Distribution of expression levels in between samples before quantile normalization. Different colors represent different studies included in the dataset}
+%   \label{fig:pre-quantile}
+% \end{center}
+% \end{figure}
+
+% \begin{figure}[here]
+% \begin{center}
+%   \includegraphics[height = 4in]{figures/after-quantile.png}
+%   \caption{Distribution of expression levels in between samples after quantile normalization. Different colors represent different studies included in the dataset}
+%   \label{fig:after-quantile}
+% \end{center}
+% \end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 3in]{figures/neuroexpresso.png}
+  \caption{A screenshot of the NeuroExpresso web application: A tool to visualize gene expression in the cell types of our database.}
+  \label{fig:neuroexpresso}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 3in]{figures/regionHierarchy.png}
+  \caption{Hierarchy of brain regions used to separate the cell types into groups representing different regions of the brain. Cell types isolated from the regions in the lower nodes of the hierarchy are added to the higher nodes connected to them, while cell types isolated from the regions in the higher nodes are inlcuded in the lower nodes.}
+  \label{fig:regionHierarchy}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 4in]{figures/cortexGenes.png}
+  \caption{Expression of top 5 marker genes detected from cortex cell types. Values are scaled to be between 0 and 1, 0 representing the lowest observed expression level for the gene while 1 representing the highest. Samples and genes follow the same order of cell types to emphasize the specificity of the selected genes.}
+  \label{fig:cortexGenes}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 6in]{figures/allenValidate.png}
+  \caption{Expression of known marker genes and newly discovered marker genes in Allen Brain Atlas (Lein et al. 2007) mouse brain in situ hybridization database. A. Expression of new and known markers of purkinje cells in cerebellum. B. Expression of new and known markers of granule cells in dentate gyrus, granule cell layer}
+  \label{fig:allenValidate}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 3in]{figures/hybridizationValidation.jpg}
+  \caption{Single-plane image of mouse sensorimotor cortex labeled for Pvalb, Slc32a1, and Cox6a2 mRNAs and counterstained with NeuroTrace. Arrows depict a Slc32a1+/Pvalb+ neuron that is Cox6a2+ (solid arrowhead), a Slc32a1+/Pvalb- neuron that lacks Cox6a2 mRNA (open arrowhead) and a Slc32a1- cell that lacks Cox6a2 mRNA (arrow). Bar = 5 µms.}
+  \label{fig:hybridizationValidation}
+\end{center}
+\end{figure}
+
+
+
+% 
+% \begin{figure}[here]
+% \begin{center}
+%   \includegraphics[height = 6in]{figures/singleCellCoexp.png}
+%   \caption{Binary heatmaps representing the expression of marker genes in single human and mouse cells. Blue shows the existence of a gene while white shows its absance. Significance stars represent the difference between coexistance of the genes and randomly selected gene sets with similar prevelance in the dataset. a-j shows the expression of marker genes in mouse single cells (Zeisel et al. 2015). k-t shows the expression of marker genes in single human cells (Darmanis et al. 2015). Since the data is collected specifically from frontal cortex, only cortex cell types are tested.}
+%   \label{fig:singleCellCoexp}
+% \end{center}
+% \end{figure}
+
+
+
+% \begin{figure}[here]
+% \begin{center}
+%   \includegraphics[height = 4in]{figures/whole-coexpression.png}
+%   \caption{In between coexpression levels of marker gene sets. Significance markers show significantly higher co-expression than co-expression between all genes}
+%   \label{fig:whole-coexpression}
+% \end{center}
+% \end{figure}
+
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 6in]{figures/concordance.png}
+  \caption{Pipeline for the upcoming analyisis on concordance of different cell type based analysis studies.}
+  \label{fig:concordance}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 6in]{figures/cortexWhite.png}
+  \caption{Estimations of cortical cell types in frontal cortex and white matter. Values are normalized to be between 0 and 1. Estimations appropriately reflect expected differences between white and gray matter for the most part. It is also possible to see some unexpected increase of some pyramidal subtypes.}
+  \label{fig:cortexWhite}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 4in]{figures/purkinjeCereb.png}
+  \caption{Estimations of purkinje cells in different brain regions. Values are normalized to be between 0 and 1. Purkinje cells are specific to the cerebellum.}
+  \label{fig:purkinjeCereb}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 4in]{figures/parkinsonMale.png}
+  \caption{Estimations of dopaminergic cells in different substantia nigra of male parkinson's disease patients. Values are normalized to be between 0 and 1. Dopaminergic cell loss is an expected consequence of Parkinson's Disease}
+  \label{fig:parkinsonMale}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 6in]{figures/lm11MouseHumanSwap.png}
+  \caption{A-B. Expression of the genes selected from a species in the samples used for isolation from the same species. A shows human genes in human cell type specific expression profile dataset while B is mouse genes in mouse cell type specific expression profile dataset. C-D. Expression of homologues of the genes selected from a species in cell type specific expression profile dataset of the other species. C shows human marker gene expressio in mouse samples while D shows mouse marker gene expression in human samples.}
+  \label{fig:lm11MouseHumanSwap}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 8in]{figures/lm11Estimations.png}
+  \caption{Estimations done by our method (black) and Cibersory (red) are plotted against the real cell counts from the samples. Left axis shows our estimation values scaled between 0 and 1. Left axis shows Cibersort's estimate which is a percentage. A. Estimations done using marker genes selected from human cell type expression profiles. B. Estimations done using marker genes selected from mouse cell type expression profiles.}
+  \label{fig:lm11Estimations}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 8in]{figures/lm22EstimationsHuman.png}
+  \caption{Estimations of finer subtypes done by our method using marker genes selected from human samples (black) and Cibersory (red) are plotted against the real cell counts from the samples. Left axis shows our estimation values scaled between 0 and 1. Left axis shows Cibersort's estimate which is a percentage.}
+  \label{fig:lm22EstimationsHuman}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 8in]{figures/lm22EstimationsMouse.png}
+  \caption{Estimations of finer subtypes done by our method using marker genes selected from human samples (black) and Cibersory (red) are plotted against the real cell counts from the samples. Left axis shows our estimation values scaled between 0 and 1. Left axis shows Cibersort's estimate which is a percentage. Our estimations are much worse for these cells, in the case of memory B cells there is strong negative correlation and we failed to detect enough genes to make an estimation for resting memory T cells.}
+  \label{fig:lm22EstimationsMouse}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \caption{Expression of purkinje markers discovered in the study in Allen Brain Atlas (Lein et al. 2007) mouse brain in situ hybridization database.}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/1.png}
+  \label{fig:allenAllPurkinje}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/5.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/9.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/13.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/17.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/21.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/25.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/29.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/purkinjeValidate/33.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 5in]{figures/purkinjeValidate/37.png}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[here]
+\begin{center}
+  \caption{Expression of dentate granule cell markers discovered in the study in Allen Brain Atlas (Lein et al. 2007) mouse brain in situ hybridization database.}
+  \includegraphics[height = 10in]{figures/dentateValidate/1.png}
+  \label{fig:allenAllDentate}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/dentateValidate/5.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/dentateValidate/9.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/dentateValidate/13.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/dentateValidate/17.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 10in]{figures/dentateValidate/21.png}
+\end{center}
+\end{figure}
+
+\begin{figure}[here]
+\begin{center}
+  \includegraphics[height = 2.5in]{figures/dentateValidate/25.png}
+\end{center}
+\end{figure}

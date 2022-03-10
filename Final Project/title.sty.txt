@@ -1,0 +1,49 @@
+\onehalfspacing
+\pagenumbering{gobble}
+
+%\begin{titlepage}
+\begin{center}
+\LARGE{\textbf{Identification cell type marker genes of the brain and their use in estimation of cell type proportions}}\\
+\vspace*{2\baselineskip}
+\Large{\textbf{Thesis Proposal for Doctor of Philosophy(PhD) Degree}}\\
+\normalsize{UBC bioinformatics Graduate Program}\\
+\vspace*{2\baselineskip}
+\Large{Ogan Mancarci, B.Sc}\\
+\vspace*{3\baselineskip}
+\Large{\textbf{Thesis Supervisor}}\\
+Dr. Paul Pavlidis\\
+\vspace*{2\baselineskip}
+\Large{\textbf{Committee Members}}\\
+Dr. Clare Beasley\\
+Dr. Shernaz Bamji\\
+Dr. Sara Mostafavi\\
+\vspace*{1\baselineskip}
+\Large{\textbf{Chair}}\\
+Dr. Ryan Brinkman\\
+\vspace*{1\baselineskip}
+\Large{\textbf{Examination Date}}\\
+June 19, 2015
+\end{center}
+% \end{titlepage}
+
+\doublespacing
+
+\hypersetup{linkcolor = black}
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\addcontentsline{toc}{section}{\contentsname}
+
+\newpage
+
+% list of figures have to be added manually to table of contents
+\listoffigures 
+
+\newpage
+\listoftables
+
+\doublespacing
+
+\newpage
+\pagenumbering{arabic}
+\hypersetup{linkcolor = blue}
